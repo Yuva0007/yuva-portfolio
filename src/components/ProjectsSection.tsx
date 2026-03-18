@@ -1,5 +1,5 @@
 import { motion } from "framer-motion";
-import { ExternalLink, Github } from "lucide-react";
+import { ExternalLink, Github, ArrowUpRight } from "lucide-react";
 
 const projects = [
   {
@@ -36,9 +36,9 @@ const ProjectsSection = () => {
   return (
     <section id="projects" className="section-padding">
       <div className="section-container">
-        <motion.div initial={{ opacity: 0, y: 20 }} whileInView={{ opacity: 1, y: 0 }} viewport={{ once: true }}>
-          <span className="mono-tag">Portfolio</span>
-          <h2 className="text-3xl sm:text-4xl font-bold text-foreground mt-4 mb-12 tracking-tight">Featured Projects</h2>
+        <motion.div initial={{ opacity: 0, y: 20 }} whileInView={{ opacity: 1, y: 0 }} viewport={{ once: true }} className="text-center mb-16">
+          <span className="section-label">Portfolio</span>
+          <h2 className="section-title">Digital Product Showcases</h2>
         </motion.div>
 
         <div className="grid md:grid-cols-2 gap-6">
@@ -49,24 +49,27 @@ const ProjectsSection = () => {
               whileInView={{ opacity: 1, y: 0 }}
               viewport={{ once: true }}
               transition={{ duration: 0.4, delay: i * 0.1 }}
-              className="group glass-card-hover p-6"
+              className="group card-elevated p-6 relative overflow-hidden"
             >
-              <div className="flex items-start justify-between mb-4">
-                <span className="font-mono text-[10px] uppercase tracking-widest text-primary">{project.category}</span>
+              {/* Category badge */}
+              <div className="flex items-center justify-between mb-4">
+                <span className="text-[10px] font-semibold uppercase tracking-[0.15em] text-primary bg-primary/5 px-3 py-1 rounded-full">{project.category}</span>
                 <div className="flex gap-2">
-                  <a href={project.github} target="_blank" rel="noopener noreferrer" className="text-muted-foreground hover:text-primary transition-colors">
-                    <Github size={18} />
+                  <a href={project.github} target="_blank" rel="noopener noreferrer" className="w-8 h-8 rounded-lg bg-secondary flex items-center justify-center text-muted-foreground hover:text-primary hover:bg-primary/10 transition-colors">
+                    <Github size={15} />
                   </a>
-                  <a href={project.github} target="_blank" rel="noopener noreferrer" className="text-muted-foreground hover:text-primary transition-colors">
-                    <ExternalLink size={18} />
+                  <a href={project.github} target="_blank" rel="noopener noreferrer" className="w-8 h-8 rounded-lg bg-secondary flex items-center justify-center text-muted-foreground hover:text-primary hover:bg-primary/10 transition-colors">
+                    <ArrowUpRight size={15} />
                   </a>
                 </div>
               </div>
-              <h3 className="text-lg font-semibold text-foreground mb-2 group-hover:text-primary transition-colors">{project.title}</h3>
-              <p className="text-sm text-muted-foreground leading-relaxed mb-4">{project.desc}</p>
+
+              <h3 className="text-lg font-bold text-foreground mb-2 group-hover:text-primary transition-colors">{project.title}</h3>
+              <p className="text-sm text-muted-foreground leading-relaxed mb-5">{project.desc}</p>
+              
               <div className="flex flex-wrap gap-2">
                 {project.tech.map((t) => (
-                  <span key={t} className="mono-tag text-[10px]">{t}</span>
+                  <span key={t} className="skill-tag text-[10px]">{t}</span>
                 ))}
               </div>
             </motion.div>
