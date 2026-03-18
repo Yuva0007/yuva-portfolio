@@ -9,30 +9,34 @@ const skillCategories = [
   { title: "Core Concepts", skills: ["DSA", "OS", "Computer Networks"] },
 ];
 
-const container = { hidden: { opacity: 0 }, show: { opacity: 1, transition: { staggerChildren: 0.05, delayChildren: 0.2 } } };
-const item = { hidden: { opacity: 0, y: 10 }, show: { opacity: 1, y: 0, transition: { duration: 0.4, ease: [0.2, 0.8, 0.2, 1] as const } } };
-
 const SkillsSection = () => {
   return (
-    <section id="skills" className="section-padding">
+    <section id="skills" className="section-padding bg-secondary/50">
       <div className="section-container">
-        <motion.div initial={{ opacity: 0, y: 20 }} whileInView={{ opacity: 1, y: 0 }} viewport={{ once: true }}>
-          <span className="mono-tag">Skills</span>
-          <h2 className="text-3xl sm:text-4xl font-bold text-foreground mt-4 mb-12 tracking-tight">Technical Arsenal</h2>
+        <motion.div initial={{ opacity: 0, y: 20 }} whileInView={{ opacity: 1, y: 0 }} viewport={{ once: true }} className="text-center mb-16">
+          <span className="section-label">Skills</span>
+          <h2 className="section-title">Technical Arsenal</h2>
         </motion.div>
 
-        <motion.div variants={container} initial="hidden" whileInView="show" viewport={{ once: true }} className="grid sm:grid-cols-2 lg:grid-cols-3 gap-6">
-          {skillCategories.map((cat) => (
-            <motion.div key={cat.title} variants={item} className="glass-card p-6">
-              <h3 className="font-mono text-xs uppercase tracking-widest text-primary mb-4">{cat.title}</h3>
+        <div className="grid sm:grid-cols-2 lg:grid-cols-3 gap-6">
+          {skillCategories.map((cat, i) => (
+            <motion.div
+              key={cat.title}
+              initial={{ opacity: 0, y: 15 }}
+              whileInView={{ opacity: 1, y: 0 }}
+              viewport={{ once: true }}
+              transition={{ duration: 0.4, delay: i * 0.08 }}
+              className="card-elevated p-6"
+            >
+              <h3 className="text-xs font-semibold uppercase tracking-[0.15em] text-primary mb-4">{cat.title}</h3>
               <div className="flex flex-wrap gap-2">
                 {cat.skills.map((skill) => (
-                  <span key={skill} className="mono-tag">{skill}</span>
+                  <span key={skill} className="skill-tag">{skill}</span>
                 ))}
               </div>
             </motion.div>
           ))}
-        </motion.div>
+        </div>
       </div>
     </section>
   );

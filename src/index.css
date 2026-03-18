@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&family=JetBrains+Mono:wght@400;500;600&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800;900&family=Inter:wght@300;400;500;600;700&display=swap');
 
 @tailwind base;
 @tailwind components;
@@ -6,35 +6,35 @@
 
 @layer base {
   :root {
-    --background: 222 47% 4%;
-    --foreground: 210 40% 98%;
-    --card: 222 47% 7%;
-    --card-foreground: 210 40% 98%;
-    --popover: 222 47% 7%;
-    --popover-foreground: 210 40% 98%;
-    --primary: 199 89% 48%;
-    --primary-foreground: 222 47% 4%;
-    --secondary: 217 32% 17%;
-    --secondary-foreground: 210 40% 98%;
-    --muted: 217 32% 12%;
-    --muted-foreground: 215 20% 55%;
-    --accent: 199 89% 48%;
-    --accent-foreground: 222 47% 4%;
+    --background: 0 0% 100%;
+    --foreground: 220 20% 14%;
+    --card: 0 0% 100%;
+    --card-foreground: 220 20% 14%;
+    --popover: 0 0% 100%;
+    --popover-foreground: 220 20% 14%;
+    --primary: 14 90% 55%;
+    --primary-foreground: 0 0% 100%;
+    --secondary: 240 5% 96%;
+    --secondary-foreground: 220 20% 14%;
+    --muted: 240 5% 96%;
+    --muted-foreground: 220 10% 46%;
+    --accent: 260 60% 52%;
+    --accent-foreground: 0 0% 100%;
     --destructive: 0 84% 60%;
-    --destructive-foreground: 210 40% 98%;
-    --border: 217 32% 15%;
-    --input: 217 32% 15%;
-    --ring: 199 89% 48%;
+    --destructive-foreground: 0 0% 100%;
+    --border: 220 13% 91%;
+    --input: 220 13% 91%;
+    --ring: 14 90% 55%;
     --radius: 0.75rem;
 
-    --sidebar-background: 222 47% 6%;
-    --sidebar-foreground: 210 40% 98%;
-    --sidebar-primary: 199 89% 48%;
-    --sidebar-primary-foreground: 222 47% 4%;
-    --sidebar-accent: 217 32% 17%;
-    --sidebar-accent-foreground: 210 40% 98%;
-    --sidebar-border: 217 32% 15%;
-    --sidebar-ring: 199 89% 48%;
+    --sidebar-background: 0 0% 98%;
+    --sidebar-foreground: 220 20% 14%;
+    --sidebar-primary: 14 90% 55%;
+    --sidebar-primary-foreground: 0 0% 100%;
+    --sidebar-accent: 240 5% 96%;
+    --sidebar-accent-foreground: 220 20% 14%;
+    --sidebar-border: 220 13% 91%;
+    --sidebar-ring: 14 90% 55%;
   }
 }
 
@@ -43,8 +43,8 @@
     @apply border-border;
   }
   body {
-    @apply bg-background text-foreground font-sans antialiased;
-    font-family: 'Inter', system-ui, sans-serif;
+    @apply bg-background text-foreground antialiased;
+    font-family: 'Poppins', 'Inter', system-ui, sans-serif;
   }
   html {
     scroll-behavior: smooth;
@@ -52,34 +52,29 @@
 }
 
 @layer components {
-  .glass-card {
-    @apply bg-card/50 backdrop-blur-xl border border-white/10 rounded-2xl;
-    box-shadow: inset 0 1px 0 0 rgba(255,255,255,0.05);
-  }
-  .glass-card-hover {
-    @apply glass-card transition-all duration-300;
-  }
-  .glass-card-hover:hover {
-    box-shadow: 0 0 0 1px rgba(56,189,248,0.2), 0 20px 25px -5px rgba(0,0,0,0.1), inset 0 1px 0 0 rgba(255,255,255,0.05);
-    transform: translateY(-4px);
-  }
   .section-container {
-    @apply max-w-6xl mx-auto px-4 sm:px-6 lg:px-8;
+    @apply max-w-7xl mx-auto px-4 sm:px-6 lg:px-8;
   }
   .section-padding {
     @apply py-20 md:py-28;
   }
-  .gradient-text {
-    @apply bg-gradient-to-r from-primary to-cyan-300 bg-clip-text text-transparent;
+  .card-elevated {
+    @apply bg-card rounded-2xl border border-border shadow-sm transition-all duration-300;
   }
-  .mono-tag {
-    @apply font-mono text-xs py-1 px-3 bg-muted border border-border rounded-md text-primary;
+  .card-elevated:hover {
+    @apply shadow-xl border-primary/20;
+    transform: translateY(-4px);
   }
-  .glow-border {
-    box-shadow: 0 0 20px hsla(199, 89%, 48%, 0.15);
+  .section-label {
+    @apply text-xs font-semibold uppercase tracking-[0.2em] text-primary;
   }
-  .dot-grid {
-    background-image: radial-gradient(circle at 2px 2px, rgba(255,255,255,0.04) 1px, transparent 0);
-    background-size: 40px 40px;
+  .section-title {
+    @apply text-3xl sm:text-4xl lg:text-5xl font-bold text-foreground mt-3 mb-4 tracking-tight leading-tight;
+  }
+  .skill-tag {
+    @apply text-xs font-medium py-1.5 px-3 bg-secondary text-muted-foreground rounded-full border border-border;
+  }
+  .accent-dot {
+    @apply w-2 h-2 rounded-full bg-primary inline-block;
   }
 }
