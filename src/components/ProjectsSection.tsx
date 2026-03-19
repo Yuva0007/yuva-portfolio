@@ -62,9 +62,11 @@ const ProjectsSection = () => {
                   <a href={project.github} target="_blank" rel="noopener noreferrer" className="w-8 h-8 rounded-lg bg-secondary flex items-center justify-center text-muted-foreground hover:text-primary hover:bg-primary/10 transition-colors">
                     <Github size={15} />
                   </a>
-                  <a href={project.github} target="_blank" rel="noopener noreferrer" className="w-8 h-8 rounded-lg bg-secondary flex items-center justify-center text-muted-foreground hover:text-primary hover:bg-primary/10 transition-colors">
-                    <ArrowUpRight size={15} />
-                  </a>
+                  {project.live && (
+                    <a href={project.live} target="_blank" rel="noopener noreferrer" className="w-8 h-8 rounded-lg bg-secondary flex items-center justify-center text-muted-foreground hover:text-primary hover:bg-primary/10 transition-colors">
+                      <ArrowUpRight size={15} />
+                    </a>
+                  )}
                 </div>
               </div>
 
