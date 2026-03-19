@@ -8,6 +8,7 @@ const projects = [
     desc: "Full-stack application with authentication, alumni profiles, and messaging system for institutional use.",
     tech: ["Java", "Spring Boot", "React", "Firebase"],
     github: "https://github.com/Yuva0007",
+    live: "",
   },
   {
     title: "AI Plant Disease Detection",
@@ -15,6 +16,7 @@ const projects = [
     desc: "ML-based system for detecting plant leaf diseases from images and suggesting remedies to farmers.",
     tech: ["Python", "TensorFlow", "Flask"],
     github: "https://github.com/Yuva0007",
+    live: "",
   },
   {
     title: "Online Code Compiler",
@@ -22,6 +24,7 @@ const projects = [
     desc: "Web application with automatic language detection and code execution supporting multiple programming languages.",
     tech: ["Java", "Python", "React"],
     github: "https://github.com/Yuva0007",
+    live: "https://compiler-front-end.vercel.app/",
   },
   {
     title: "Sales Dashboard",
@@ -29,6 +32,7 @@ const projects = [
     desc: "Interactive dashboard with revenue, profit, and trend analysis using advanced visualization techniques.",
     tech: ["Excel", "Power BI", "DAX"],
     github: "https://github.com/Yuva0007",
+    live: "",
   },
 ];
 
