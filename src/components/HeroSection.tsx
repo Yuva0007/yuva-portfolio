@@ -65,7 +65,7 @@ const HeroSection = () => {
               
               {/* Profile image */}
               <div className="relative z-10 w-80 h-96 sm:w-96 sm:h-[28rem] rounded-3xl overflow-hidden">
-                <img src={profileImg} alt="Yuvaraj M" className="w-full h-full object-cover object-top" />
+                <img src={profileImg} alt="Yuvaraj M" className="w-full h-full object-contain object-bottom" />
               </div>
 
               {/* Floating stat card */}
