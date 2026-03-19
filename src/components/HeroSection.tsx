@@ -22,7 +22,7 @@ const HeroSection = () => {
             
             <h1 className="text-5xl sm:text-6xl lg:text-7xl font-extrabold text-foreground leading-[1.1] mb-6 tracking-tight">Hey! I Am
 Yuvaraj M<br />
-              <span className="text-foreground">Yuvaraj M</span>
+              <span className="text-foreground"></span>
             </h1>
             <p className="text-muted-foreground leading-relaxed mb-8 max-w-md text-base">
               Aspiring Software Developer and Data Science enthusiast, 
