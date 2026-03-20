@@ -31,7 +31,7 @@ const projects = [
     category: "Data Analytics",
     desc: "Interactive dashboard with revenue, profit, and trend analysis using advanced visualization techniques.",
     tech: ["Excel"],
-    github: "https://github.com/Yuva0007",
+    github: "https://github.com/Yuva0007/sales_dashboard-Excel-",
     live: "https://1drv.ms/x/c/a6687b2e99bb194b/IQCzmwTI_PFZSpVsOUZ7hTddAW9bl63ZSh1b8dxwqh9IGkg?e=11CZZ6",
   },
   {
