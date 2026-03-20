@@ -7,7 +7,7 @@ const projects = [
     category: "Full Stack",
     desc: "Full-stack application with authentication, alumni profiles, and messaging system for institutional use.",
     tech: ["Java", "Spring Boot", "React", "Firebase"],
-    github: "https://github.com/Yuva0007",
+    github: "https://github.com/Yuva0007/Alumniproj",
     live: "",
   },
   {
