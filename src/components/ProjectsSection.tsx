@@ -23,7 +23,7 @@ const projects = [
     category: "Full Stack",
     desc: "Web application with automatic language detection and code execution supporting multiple programming languages.",
     tech: ["Java", "Python", "React"],
-    github: "https://github.com/Yuva0007",
+    github: "https://github.com/Yuva0007/SmartIde",
     live: "https://compiler-front-end.vercel.app/",
   },
   {
