@@ -40,7 +40,7 @@ const projects = [
     desc: "Comprehensive marketing campaign performance analysis with interactive reports and actionable insights.",
     tech: ["Power BI", "DAX"],
     github: "https://github.com/Yuva0007",
-    live: "",
+    live: "https://github.com/Yuva0007/marketing_campaign_analysis-powerbi-/blob/main/project1.pdf",
   },
 ];
 
