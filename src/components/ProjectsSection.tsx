@@ -8,7 +8,7 @@ const projects = [
     desc: "Full-stack application with authentication, alumni profiles, and messaging system for institutional use.",
     tech: ["Java", "Spring Boot", "React", "Firebase"],
     github: "https://github.com/Yuva0007",
-    live: "",
+    live: "https://github.com/Yuva0007/Alumniproj",
   },
   {
     title: "AI Plant Disease Detection",
