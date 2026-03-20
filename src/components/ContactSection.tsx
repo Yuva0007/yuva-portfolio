@@ -23,7 +23,7 @@ const ContactSection = () => {
           <motion.div initial={{ opacity: 0, x: -20 }} whileInView={{ opacity: 1, x: 0 }} viewport={{ once: true }} className="space-y-5">
             {[
               { icon: Mail, label: "Email", value: "yuvaraj.m.7891@gmail.com", href: "mailto:yuvaraj.m.7891@gmail.com" },
-              { icon: Phone, label: "Phone", value: "+91 81227 75039", href: `https://wa.me/918122775039?text=${encodeURIComponent("Hello, I saw your portfolio – Yuvaraj")}` },
+              { icon: Phone, label: "Phone", value: "+91 81227 75039", href: `https://wa.me/918122775039?text=${encodeURIComponent("Hello, I saw your portfolio - Yuvaraj")}` },
               { icon: MapPin, label: "Location", value: "Coimbatore, India", href: "#" },
               { icon: Linkedin, label: "LinkedIn", value: "Yuvaraj M", href: "https://www.linkedin.com/in/yuvaraj-m-bb42ab354/" },
               { icon: Github, label: "GitHub", value: "Yuva0007", href: "https://github.com/Yuva0007" },
