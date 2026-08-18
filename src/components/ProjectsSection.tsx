@@ -47,7 +47,7 @@ const projects = [
     category: "Machine Learning",
     desc: "An AI/ML-based full-stack application for converting speech into Indian Sign Language (ISL).",
     tech: ["python", "javascript", "machine learning", "MoviePy"],
-    github: "https://github.com/Yuva0007",
+    github: "https://github.com/Yuva0007/Voice-to-sign-language-generator",
     live: "",
   },
 ];
