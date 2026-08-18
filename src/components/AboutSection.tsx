@@ -11,14 +11,14 @@ const AboutSection = () => {
             <div className="relative">
               {/* Big experience card */}
               <div className="bg-accent text-accent-foreground rounded-2xl p-8 inline-block">
-                <div className="text-5xl font-bold mb-1">3+</div>
+                <div className="text-5xl font-bold mb-1">4+</div>
                 <div className="text-sm font-medium opacity-90">Years<br />Learning &<br />Building</div>
               </div>
 
               {/* About cards */}
               <div className="mt-8 space-y-4">
                 {[
-                  { icon: User, title: "Who I Am", text: "A Computer Science Engineering student in the 6th semester passionate about building real-world solutions." },
+                  { icon: User, title: "Who I Am", text: "A Computer Science Engineering student in the 7th semester passionate about building real-world solutions." },
                   { icon: Target, title: "Objective", text: "Seeking internship opportunities to gain hands-on experience and contribute to impactful projects." },
                   { icon: Zap, title: "Strengths", text: "Quick learner, strong problem-solving mindset, and motivated to continuously grow through practical work." },
                 ].map((item, i) => (
@@ -67,7 +67,7 @@ const AboutSection = () => {
               <div className="card-elevated p-5 flex items-center gap-3">
                 <div className="w-3 h-3 rounded-full bg-accent" />
                 <div>
-                  <div className="text-sm font-bold text-foreground">6th Semester</div>
+                  <div className="text-sm font-bold text-foreground">7th Semester</div>
                   <p className="text-xs text-muted-foreground">B.E. CSE • Expected 2027</p>
                 </div>
               </div>

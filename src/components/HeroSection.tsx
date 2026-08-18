@@ -87,7 +87,7 @@ Yuvaraj M<br />
                 <span className="text-2xl">🎓</span>
                 <div>
                   <div className="text-xs font-bold text-foreground">B.E. CSE</div>
-                  <div className="text-[10px] text-muted-foreground">6th Semester</div>
+                  <div className="text-[10px] text-muted-foreground">7th Semester</div>
                 </div>
               </motion.div>
             </div>
