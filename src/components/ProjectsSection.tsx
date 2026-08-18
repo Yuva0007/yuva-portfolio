@@ -42,6 +42,14 @@ const projects = [
     github: "https://github.com/Yuva0007/marketing_campaign_analysis-powerbi-",
     live: "https://github.com/Yuva0007/marketing_campaign_analysis-powerbi-/blob/main/project1.pdf",
   },
+  {
+    title: "Voice to Sign Language Generator",
+    category: "Machine Learning",
+    desc: "An AI/ML-based full-stack application for converting speech into Indian Sign Language (ISL).",
+    tech: ["python", "javascript", "machine learning", "MoviePy"],
+    github: "https://github.com/Yuva0007",
+    live: "",
+  },
 ];
 
 const ProjectsSection = () => {
