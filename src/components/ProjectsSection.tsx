@@ -75,11 +75,13 @@ const ProjectsSection = () => {
               <div className="flex items-center justify-between mb-4">
                 <span className="text-[10px] font-semibold uppercase tracking-[0.15em] text-primary bg-primary/5 px-3 py-1 rounded-full">{project.category}</span>
                 <div className="flex gap-2">
-                  <a href={project.github} target="_blank" rel="noopener noreferrer" className="w-8 h-8 rounded-lg bg-secondary flex items-center justify-center text-muted-foreground hover:text-primary hover:bg-primary/10 transition-colors">
-                    <Github size={15} />
-                  </a>
-                  {project.live && (
-                    <a href={project.live} target="_blank" rel="noopener noreferrer" className="w-8 h-8 rounded-lg bg-secondary flex items-center justify-center text-muted-foreground hover:text-primary hover:bg-primary/10 transition-colors">
+                  {project.github && (
+                    <a href={project.github} target="_blank" rel="noopener noreferrer" className="w-8 h-8 rounded-lg bg-secondary flex items-center justify-center text-muted-foreground hover:text-primary hover:bg-primary/10 transition-colors">
+                      <Github size={15} />
+                    </a>
+                  )}
+                  {(project.live || project.github) && (
+                    <a href={project.live || project.github} target="_blank" rel="noopener noreferrer" className="w-8 h-8 rounded-lg bg-secondary flex items-center justify-center text-muted-foreground hover:text-primary hover:bg-primary/10 transition-colors">
                       <ArrowUpRight size={15} />
                     </a>
                   )}
